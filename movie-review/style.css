@@ -121,7 +121,7 @@ dl>dd {
 }
 
 #validators {
-    width: 20%;
+    width: 15%;
     margin: auto;
     position: fixed;
     bottom: 0;
@@ -130,4 +130,5 @@ dl>dd {
 
 #validators>a {
     display: block;
+    text-align: right;
 }
