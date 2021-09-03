@@ -48,7 +48,7 @@
                         <label for="name">Age:</label>
                     </div>
                     <div class="col-15">
-                        <input type="text" id="Age" name="Age" maxlength="6" placeholder="Age..">
+                        <input type="number" id="Age" name="Age" placeholder="Age.." pattern="[0-9]{2}">
                     </div>
                 </div>
                 <div class="row left">
@@ -56,7 +56,7 @@
                         <label for="name">Personality type:</label>
                     </div>
                     <div class="col-75">
-                        <input class="w-20p" type="text" id="name" name="name" maxlength="6" placeholder="Personality.."> (
+                        <input class="w-20p" type="text" id="name" name="name" placeholder="Personality.." pattern="[A-Z]{4}"> (
                         <a href="http://www.humanmetrics.com/cgi-win.JTypes2.asp" class="red">Don't know your type?</a>)
                     </div>
                 </div>
@@ -77,9 +77,9 @@
                         <label for="min">Seeking age:</label>
                     </div>
                     <div class="col-75">
-                        <input class="w-20p" type="text" id="min" name="min" placeholder="min" maxlength="6">
+                        <input class="w-20p" type="text" id="min" name="min" placeholder="min" maxlength="6" pattern="[0-9]{2}">
                         <label for="">to</label>
-                        <input class="w-20p" type="text" id="max" name="max" placeholder="max" maxlength="6">
+                        <input class="w-20p" type="text" id="max" name="max" placeholder="max" maxlength="6" pattern="[0-9]{2}">
                     </div>
                 </div>
                 <div class="row left mt-5p">
