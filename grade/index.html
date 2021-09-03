@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <div class="w-100p header">
+        <img alt="profile image" class="header-img" src="../resource/images/header.jpg" />
+    </div>
+
+    <section id="title">
+        <h2 id="name" style="text-align: center; font: normal small-caps bold 30px/5px Courier, serif;">Retrieve your grade
+        </h2>
+    </section>
+
+    <form method="GET" action="http://mumstudents.org/params.php" autocomplete=“on”>
+        <div id="form-container" class="center mr-lr-30p p-2">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sudentId">Student ID:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sudentId" name="sudentId" placeholder="Your Student ID.." />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="assignment">Entry:</label>
+                </div>
+                <div class="col-75 left">
+                    <div class="col-25">
+                        <input type="radio" name="entry" id="Feb-2021">
+                        <label for="Feb-2021">Feb 2021</label>
+                    </div>
+                    <div class="col-25">
+                        <input type="radio" name="entry" value="May 2021">
+                        <label for="May-2021">May 2021</label>
+                    </div>
+                    <div class="col-25">
+                        <input type="radio" name="entry" value="Aug 2021">
+                        <label for="Aug-2021">Aug 2021</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="assignment">Assignment:</label>
+                </div>
+                <div class="col-75">
+                    <select>
+                        <option value="Assignment-1">Assignment-1</option>
+                        <option value="Assignment-2">Assignment-2</option>
+                        <option value="Assignment-3">Assignment-3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="privacy">Privacy:</label>
+                </div>
+                <div class="col-75 left">
+                    <div class="col-50">
+                        <input type="checkbox" id="privacy" name="privacy" value="privacy">
+                        <label for="privacy">Accept All Terms!</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-75">
+                    <input type="submit" value="Get Grade!" />
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
