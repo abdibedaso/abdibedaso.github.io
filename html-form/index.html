@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="col-100">
+        <h1 id="logo"><span id="neard">nerd</span><span id="luv">Luv<sup>tm</sup></span></h1>
+        <p id="slogan">where meek geeks meet</p>
+    </header>
+
+    <section class="col-50 mt-2p">
+        <form method="GET" action="http://mumstudents.org/params.php" autocomplete=“on”>
+            <legend>New User Signup</legend>
+            <div class="p-2">
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="col-50">
+                        <input type="text" id="name" name="name" maxlength="16" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="assignment">Gender:</label>
+                    </div>
+                    <div class="col-75 left">
+                        <div class="col-25">
+                            <input type="radio" name="entry" id="Male">
+                            <label for="Male">Male</label>
+                        </div>
+                        <div class="col-25">
+                            <input type="radio" name="entry" value="Female">
+                            <label for="Female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="name">Age:</label>
+                    </div>
+                    <div class="col-15">
+                        <input type="text" id="Age" name="Age" maxlength="6" placeholder="Age..">
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="name">Personality type:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="w-20p" type="text" id="name" name="name" maxlength="6" placeholder="Personality.."> (
+                        <a href="http://www.humanmetrics.com/cgi-win.JTypes2.asp" class="red">Don't know your type?</a>)
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="">Favorite OS:</label>
+                    </div>
+                    <div class="col-50">
+                        <select class="w-30p">
+                        <option value="Windows">Windows</option>
+                        <option value="Linux">Linux</option>
+                        <option value="Mac">Mac</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="row left">
+                    <div class="col-25">
+                        <label for="min">Seeking age:</label>
+                    </div>
+                    <div class="col-75">
+                        <input class="w-20p" type="text" id="min" name="min" placeholder="min" maxlength="6">
+                        <label for="">to</label>
+                        <input class="w-20p" type="text" id="max" name="max" placeholder="max" maxlength="6">
+                    </div>
+                </div>
+                <div class="row left mt-5p">
+                    <div class="col-25">
+                        <input type="submit" value="Sign Up" />
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
