@@ -6,6 +6,7 @@ function calcTip() {
     let subtotal = subtotalElem.value;
     let tip = tipElem.value;
 
-    let total = (tip / 100) * subtotal;
+    let total = ((tip / 100) * subtotal) + parseInt(subtotal);
+
     totalElem.innerHTML = '$' + total;
 }
