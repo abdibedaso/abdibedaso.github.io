@@ -1,0 +1,45 @@
+1. 
+
+setTimeout(booyah, 2000); 
+
+This one passes the function itself to setTimeoout. It calls booaah after 2 seconds. 
+
+setTimeout(booyah(),2000); 
+
+This one calls booyah and passes the result to setTimeout. It calls the return of booyah (if it is a function) after 2 seconds. 
+
+2.  
+
+Both will alert 6; 
+
+3.  
+
+function booyah1(){ 
+
+    alert("BOOYAH") 
+
+} 
+
+function booyah2(){ 
+
+    return booyah1; 
+
+} 
+
+setTimeout(booyah1, 2000); 
+
+setTimeout(booyah2(), 2000); 
+
+4. 
+
+Separation of content (HTML) and behavior (Javascript) 
+
+Placing scripts in external files has some advantages: 
+
+ 
+
+It separates HTML and code 
+
+It makes HTML and JavaScript easier to read and maintain 
+
+Cached JavaScript files can speed up page loads 
