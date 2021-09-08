@@ -1,23 +1,30 @@
-1.	Output:
-
-    10, 8 , 8, 9, 10, 1
+1.	Output: 
+    First It will run into a SyntaxError: Unexpected token '}' because ther is an extra '}'
+    Considering the last brace removed the output would be: 10889101
 
 
 2.	A function is a block of code written to perform some specific set of tasks. 
-    We can define a function using the function keyword, followed by Name and optional parameters.
+     - They can execute a set of instructions on data or variables and return the result.
+     - We can define a function using the function keyword, followed by Name and optional parameters.
+    A method, like a function, is a set of instructions that perform a task. 
+     - The difference is that a method is associated with an object, while a function is not.
 
 
-3.	'this' is a reference to the current object
+3.	
+The this keyword refers to the current object in a method or constructor.
+    The most common use of the this keyword is to eliminate the confusion 
+    between class attributes and parameters with the same name (because a class attribute is shadowed by a method or constructor parameter).
+    - 'this' is a reference to the current object
     - Member of current object can be reffered by using this.
     - In the global execution context (outside of any function), this refers to the global object whether in strict mode or not.
     - Within a class constructor, this is a regular object.
     - Inside a function, the value of this depends on how the function is called.
 
 
-4.	Inside a method, 
-        that has been invoked using the property accessors, 
-        this will have the value of the invoking object, 
-        that is this will point to the object that was used in conjunction with the property accessor to make the call.
+4.	'this' is a reference to the current object
+    - Member of current object can be reffered by using this.
+    - In the global execution context (outside of any function), this refers to the global object whether in strict mode or not.
+    - Inside a function, the value of this depends on how the function is called.
 
 
 5.	Inside of a constructor function, the JavaScript keyword this refers to the object that will be created when that constructor is instantiated.
@@ -31,14 +38,14 @@
 
 8.	
 var obj = {
-    name: "Fred",
-    major: "Music",
-    property: function(a, b){
-        if(a==b){
-            return a*a;
-            } else {
-                return Math.min(a,b);
-            }
+    name: "fred",
+    major: "music",
+    property: function(num1, num2){
+        if(num1 == num2){
+            return num1 * num2;
+        } else {
+            return Math.min(num1, num2);
+        }
     }
 }
 
@@ -56,7 +63,7 @@ var obj = {
 
 
 10.	 
-     function product (... nums){
+     function product (...nums){
          let result = 1;
          for(let i=0; i < nums.length; i++){
              result *= nums[i];
@@ -66,4 +73,4 @@ var obj = {
 
 
 11.	  
-  var maximum = (a,b,c) =>   Math.max(a,b,c);
+  var maximum = (num1, num2, num3) =>   Math.max(num1, num2, num3);
