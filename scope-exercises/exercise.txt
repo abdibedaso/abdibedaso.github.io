@@ -1,0 +1,69 @@
+1.	Output:
+
+    10, 8 , 8, 9, 10, 1
+
+
+2.	A function is a block of code written to perform some specific set of tasks. 
+    We can define a function using the function keyword, followed by Name and optional parameters.
+
+
+3.	'this' is a reference to the current object
+    - Member of current object can be reffered by using this.
+    - In the global execution context (outside of any function), this refers to the global object whether in strict mode or not.
+    - Within a class constructor, this is a regular object.
+    - Inside a function, the value of this depends on how the function is called.
+
+
+4.	Inside a method, 
+        that has been invoked using the property accessors, 
+        this will have the value of the invoking object, 
+        that is this will point to the object that was used in conjunction with the property accessor to make the call.
+
+
+5.	Inside of a constructor function, the JavaScript keyword this refers to the object that will be created when that constructor is instantiated.
+
+
+6.	This will refer to the Object X.
+
+
+7.	Free variables are simply the variables that are neither locally declared nor passed as parameter.
+
+
+8.	
+var obj = {
+    name: "Fred",
+    major: "Music",
+    property: function(a, b){
+        if(a==b){
+            return a*a;
+            } else {
+                return Math.min(a,b);
+            }
+    }
+}
+
+
+9.	
+    function Employee(name, salary, position){
+        this.name = name;
+        this.salary = salary;
+        this.position = position;
+    }
+
+    var abdi = new Employee("Abdi Tufa", 12000, "Full Stack Enginer");
+    var abel = new Employee("Abel Abebe", 10000, "Frontend Developer"); 
+    var andy = new Employee ("Andy Danshamo", 11000, "Java Back End Developer");
+
+
+10.	 
+     function product (... nums){
+         let result = 1;
+         for(let i=0; i < nums.length; i++){
+             result *= nums[i];
+         }
+            return result;
+     }
+
+
+11.	  
+  var maximum = (a,b,c) =>   Math.max(a,b,c);
