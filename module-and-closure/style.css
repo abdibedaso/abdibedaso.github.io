@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    ;
+}
+
+.footer {
+    text-align: center;
+    font-size: 9pt;
+    font-family: Verdana;
+}
