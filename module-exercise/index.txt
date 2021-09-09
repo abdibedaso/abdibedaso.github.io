@@ -320,3 +320,6 @@ undefined 8 8 9 10 1
         });
     
     - It’s going to print in the console success and after will print error.
+        success
+        error
+        Error caught
