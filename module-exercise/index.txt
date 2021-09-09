@@ -95,16 +95,20 @@ undefined 8 8 9 10 1
 
         var count = (function() {
             let counter = 0;
+            
             let add = function() {
                 counter += 1;
             }
+            
             let reset = function() {
                 counter = 0;
             }
+            
             return {
                 add: add,
                 reset: reset
             }
+            
         })();
      
 7. In the definition of add( ) shown in question 6, identify the "free" variable. In the context of a function closure, what is a "free" variable?
@@ -291,7 +295,8 @@ undefined 8 8 9 10 1
     promise.then(val => alert(“Success: “+val))
         .catch(e => alert(“Error: “+e));
     
-    - It’s going to show an alert with “Success Hattori” and 500 mili seconds after it s going to show an alert with “Error: Yoshi”
+    - It’s going to show an alert with “Success Hattori” and Once the promise has settled, it cannot be changed. 
+    - Rejecting it after 500 mili seconds will not show an alert with “Error: Yoshi” because it will ot effect the event handler.
 
 16. What is the output of the following code?
 
