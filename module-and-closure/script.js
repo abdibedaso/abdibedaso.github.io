@@ -27,13 +27,9 @@ window.onload = function() {
 
 }
 
-function rudyTimer() {
+var rudyTimer = (function() {
+    setInterval(function() {
+        alert("Rudy");
+    }, 1000);
 
-    (function() {
-        setInterval(function() {
-            alert("Rudy");
-        }, 1000);
-
-    })();
-
-}
+});
