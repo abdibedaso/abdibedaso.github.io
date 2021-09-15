@@ -1,0 +1,40 @@
+1) 
+
+    $("document").ready(function(){
+        var content =  $("p:first").text();
+        $("p:last").text(content);
+    });
+
+
+2)  
+
+    $("document").ready(function(){
+      var content =  $("p:first").text();
+      $("p:last").text(content);
+    });
+
+
+3)   
+
+ $("document").ready(function(){
+    $(".third-item").prev().css("background-color", "blue");
+ });
+
+
+4)
+
+  $("document").ready(function(){
+    $(".turkey" ).replaceWith( <em>"Mashed Potatoes</em> );
+  });
+
+5)
+
+    $("document").ready(function(){
+        var parent =  $(".span").parent();
+
+        parent.css("background-color", "green");
+        parent.parent().css("background-color", "green");
+
+    });
+
+
