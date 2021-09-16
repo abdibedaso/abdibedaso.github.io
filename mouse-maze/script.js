@@ -3,11 +3,8 @@ $(function() {
     let gameStarted = false;
 
     $(".boundary").mouseover(gameOver);
-    $("#maze").mouseleave(function() {
-        if (gameStarted) {
-            gameOver();
-        }
-    })
+
+    $("#maze").mouseleave(gameOver);
 
     $("#start").click(function() {
         gameStarted = true;
