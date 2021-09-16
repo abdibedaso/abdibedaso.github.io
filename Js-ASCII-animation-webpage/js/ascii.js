@@ -1,15 +1,20 @@
 var ANIMATIONS = { bike: BIKE, exercise: EXERCISE, dive: DIVE, juggler: JUGGLER, 'custom': CUSTOM };
-var tv = document.getElementById('textarea');
-var startbtn = document.getElementById('start');
-var stopbtn = document.getElementById('stop')
-startbtn.onclick = function() { start() };
-stopbtn.onclick = function() { stop() };
+
+var textarea = document.getElementById('textarea');
+var startBtn = document.getElementById('start');
+var stopBtn = document.getElementById('stop')
+
+startBtn.onclick = function() { start() };
+stopBtn.onclick = function() { stop() };
+
 var lists;
-var current = 0,
-    end;
-timer = null;
+var current = 0;
+var end;
 var speed = 250;
 var custom = false;
+
+timer = null;
+
 document.getElementById('speed').onchange = function() {
     if (this.checked) speed = 50;
     else speed = 250;
@@ -17,13 +22,13 @@ document.getElementById('speed').onchange = function() {
     start();
 }
 document.getElementById('size').onchange = function() {
-    tv.style.fontSize = this.value + "pt";
+    textarea.style.fontSize = this.value + "pt";
 
 }
 
 document.getElementById('animation').onchange = function() {
     stop();
-    tv.value = "";
+    textarea.value = "";
     if (this.value === 'custom') {
         custom = true;
     } else {
@@ -44,21 +49,21 @@ function config() {
 }
 
 function set() {
-    tv.value = lists[current];
+    textarea.value = lists[current];
     if (current + 1 > end - 1) current = 0;
     else current++;
 }
 
 function start() {
     if (custom) {
-        lists = tv.value.split('=====');
+        lists = textarea.value.split('=====');
         config();
         custom = false;
 
     }
     timer = setInterval(set, speed);
-    startbtn.disabled = true;
-    stopbtn.disabled = false;
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
 }
 
 function stop() {
@@ -67,6 +72,6 @@ function stop() {
         clearInterval(timer);
         timer = null;
     }
-    startbtn.disabled = false;
-    stopbtn.disabled = true;
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
 }
